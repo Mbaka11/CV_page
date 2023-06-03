@@ -1,0 +1,30 @@
+[
+    {
+        "title": "Spot the Difference Game",
+        "description": "Development of an interactive drawing application using Angular, MongoDB, and WebSockets.",
+        "tools": "CSS, HTML, TypeScript, MongoDB, Angular, Jasmine, Jest",
+        "image": "../../../assets/images/img_7diff.PNG",
+        "link": "https://github.com/Mbaka11/7-difference-game-LOG2990"
+    },
+    {
+        "title": "Carpool Reservation Website",
+        "description": "Design and development of a database for a carpooling cooperative. PEAN stack (PostgreSQL, Express.js, Angular, Node.js).",
+        "tools": "CSS, HTML, TypeScript, PostgreSQL, Angular, Node.js, Express.js",
+        "image": "../../../assets/images/img_SQL.PNG",
+        "link": "https://github.com/Mbaka11/Carpooling-Cooperative-Database-Modeling-and-Web-Application-INF3710-TP4"
+    },
+    {
+        "title": "Spotify replica",
+        "description": "Created a fully functional spotify replica website.",
+        "tools": "CSS, HTML, MySQL, JavaScript, MongoDB, React, Express,Cors",
+        "image": "../../../assets/images/img_spotify.PNG",
+        "link": "https://github.com/Mbaka11/Spotify-Replica"
+    },
+    {
+        "title": "Client Server DropBox",
+        "description": "Sockets and threads concepts to enable communication between the client and server. Command-line interface for validation.",
+        "tools": "Java, Eclipse, Git, Sockets, Threads",
+        "image": "../../../assets/images/eclipse icon 1.3778a4cbe978d8dfd73c091706e26aa6c57c65aa.jpeg",
+        "link": "https://github.com/Mbaka11/Client_Server_INF3405"
+    }
+]
