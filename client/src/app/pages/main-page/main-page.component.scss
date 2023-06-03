@@ -286,3 +286,44 @@ svg {
     transform: translateY(-25%);
     box-shadow: rgba(226, 196, 63, 0.25) 0px 13px 47px -5px, rgba(180, 71, 71, 0.3) 0px 8px 16px -8px;
 }
+
+a {
+    font-size: 40px;
+}
+
+//footer
+.footer-bar {
+    background: #c9d5e8;
+    color: #020202;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+
+#socials-container {
+    background: #c9d5e8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    margin: -20px;
+}
+
+#socials-container mat-icon {
+    color: #000000;
+    font-size: 24px;
+    transition: font-size 0.2s;
+}
+
+#socials-container a:hover mat-icon {
+    font-size: 30px;
+    color: #364fab;
+    cursor: pointer;
+}
+
+.main-page-content__text_footer {
+    font-size: 24px;
+    font-weight: 200;
+    margin-bottom: 20px;
+    color: rgb(142, 145, 148);
+}
