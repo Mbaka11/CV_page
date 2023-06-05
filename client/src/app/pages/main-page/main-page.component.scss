@@ -31,7 +31,7 @@
     font-size: 15px;
     font-weight: 200;
     margin-bottom: 20px;
-    color: rgb(142, 145, 148);
+    color: rgb(104, 105, 106);
 }
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
@@ -48,11 +48,11 @@ body {
 .container {
     color: #000000;
     font-size: 2.26rem;
-    text-transform: uppercase;
     font-size: 40px;
     font-weight: 500;
     margin-top: 20px;
     margin-bottom: 40px;
+    font-family: 'Roboto';
 }
 
 .animation {
@@ -322,8 +322,42 @@ a {
 }
 
 .main-page-content__text_footer {
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 200;
     margin-bottom: 20px;
     color: rgb(142, 145, 148);
+}
+
+.wrapper {
+    height: 10vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+}
+
+.typing-demo {
+    width: 40ch;
+    height: 30ch;
+    animation: typing 2s steps(22), blink 0.5s step-end infinite alternate;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 2em;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+.nextup {
+    font-size: 20px;
 }

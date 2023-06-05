@@ -1,7 +1,7 @@
 [
     {
         "title": "Spot the Difference Game",
-        "description": "Development of an interactive drawing application using Angular, MongoDB, and WebSockets.",
+        "description": "Development of an interactive drawing application using Angular, MongoDB, and WebSockets.Execution of tests using the Jasmine framework. ",
         "tools": "CSS, HTML, TypeScript, MongoDB, Angular, Jasmine, Jest",
         "image": "../../../assets/images/img_7diff.PNG",
         "link": "https://github.com/Mbaka11/7-difference-game-LOG2990"
@@ -15,7 +15,7 @@
     },
     {
         "title": "Spotify replica",
-        "description": "Created a fully functional spotify replica website.",
+        "description": "Created a fully functional spotify replica using Jest as a unit testing library. Functionalities such as creating a playlist, listening to songs from a MongoDB db, etc.",
         "tools": "CSS, HTML, MySQL, JavaScript, MongoDB, React, Express,Cors",
         "image": "../../../assets/images/img_spotify.PNG",
         "link": "https://github.com/Mbaka11/Spotify-Replica"
@@ -26,5 +26,12 @@
         "tools": "Java, Eclipse, Git, Sockets, Threads",
         "image": "../../../assets/images/eclipse icon 1.3778a4cbe978d8dfd73c091706e26aa6c57c65aa.jpeg",
         "link": "https://github.com/Mbaka11/Client_Server_INF3405"
+    },
+    {
+        "title": "Chess game",
+        "description": "Build a 2 player chess game. A well structured OOP project with inheritance and classifications.",
+        "tools": "C++, QT",
+        "image": "../../../assets/images/img_chess.PNG",
+        "link": "https://github.com/Mbaka11/ChessGame"
     }
 ]
