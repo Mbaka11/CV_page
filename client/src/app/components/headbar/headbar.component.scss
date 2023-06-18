@@ -1,5 +1,20 @@
-a {
+.mat-toolbar {
+    height: 8%;
+}
+
+#webname {
     font-size: 40px;
+    padding-top: 8%;
+}
+
+#webname span {
+    color: #4facf7;
+}
+
+#fullname {
+    font-size: 20px;
+    margin-top: -3%;
+    letter-spacing: 5px;
 }
 
 .mat-toolbar {
@@ -10,20 +25,20 @@ a {
     align-items: center;
 }
 
-#socials-container {
-    display: flex;
-    align-items: center;
+.routes a {
+    font-size: 16px;
+    --c: linear-gradient(#ffffff 0 0); /* update the color here */
+
+    padding-bottom: 0.01em;
+    background: var(--c), var(--c);
+    background-size: 0.3em 0.1em;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    transition: 0.3s linear, background-size 0.3s 0.2s linear;
 }
 
-#socials-container mat-icon {
-    margin-left: 10px;
-    color: #fff;
-    font-size: 24px;
-    transition: font-size 0.2s;
-}
-
-#socials-container a:hover mat-icon {
-    font-size: 30px;
-    color: #364fab;
+.routes a:hover {
     cursor: pointer;
+    background-size: 40% 0.1em;
+    background-position: 10% 100%, 90% 100%;
 }

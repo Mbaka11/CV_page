@@ -1,0 +1,200 @@
+.about-container {
+    padding: 20px 20px;
+    background-color: rgb(45, 44, 44);
+    display: grid;
+    grid-template-areas: 'text picture';
+    grid-template-columns: 1.5fr 1fr;
+    height: 100%;
+}
+
+.text {
+    grid-area: text;
+    padding-top: 15%;
+    margin-right: 8%;
+}
+
+.title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10vh;
+    text-align: center;
+    color: #ffffff;
+    margin-left: 15px;
+    position: relative;
+    display: inline-block;
+}
+
+.blue-rectangle {
+    position: absolute;
+    left: -15px; /* Adjust the position as needed */
+    top: 50%;
+    transform: translateY(-50%);
+    width: 5px;
+    height: 40px;
+    background-color: #4facf7;
+}
+
+#svg-container {
+    grid-area: picture;
+    overflow: hidden;
+}
+
+#svg-container:hover image {
+    animation: scaleAnimation 0.8s infinite alternate;
+}
+
+@keyframes scaleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+body {
+    background: hsl(217.6, 100%, 80%);
+    font-family: monospace;
+    padding-top: 5em;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text {
+    color: #fffefe;
+    font-size: 1.5em;
+}
+
+.typewriter p {
+    color: #fffefe;
+    font-size: 2em;
+    font-weight: 500;
+    width: 0;
+    max-width: max-content;
+    overflow: hidden;
+    border-right: 0.05em solid #464545; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.typing-erase {
+    animation: 4s typing-erase 4s steps(50, end) infinite, blink-caret 0.5s step-end infinite;
+}
+
+/* The type and erase effect */
+@keyframes typing-erase {
+    0% {
+        width: 0;
+    }
+    80% {
+        width: 100%;
+    }
+    90%,
+    100% {
+        width: 0;
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    50% {
+        border-color: gray;
+    }
+}
+
+@keyframes lights {
+    0% {
+        color: hsl(0, 0%, 100%);
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2), 0 0 0.125em hsla(320, 100%, 60%, 0.3), -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+
+    30% {
+        color: hsl(0, 6%, 49%);
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    40% {
+        color: hsl(0, 0%, 100%);
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 90%, 0.5), -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+            0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+
+    70% {
+        color: hsl(240, 1%, 67%);
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.5), 0 0 0.125em hsla(320, 100%, 60%, 0.5), 0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+            -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+
+    100% {
+        color: hsl(240, 2%, 84%);
+        text-shadow: 0 0 1em hsla(320, 100%, 50%, 0.2), 0 0 0.125em hsla(320, 100%, 60%, 0.3), 1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+            -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+}
+
+.light-effect {
+    margin: auto;
+    animation: lights 9s 1000ms linear infinite;
+}
+
+button {
+    font-family: inherit;
+    font-size: 20px;
+    background: #4facf7;
+    color: white;
+    padding: 0.7em 1em;
+    padding-left: 0.9em;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 16px;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+button span {
+    display: block;
+    margin-left: 0.3em;
+    transition: all 0.3s ease-in-out;
+}
+
+button svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+button:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+button:hover svg {
+    transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+
+button:hover span {
+    transform: translateX(5em);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}

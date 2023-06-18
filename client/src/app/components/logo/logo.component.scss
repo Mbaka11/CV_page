@@ -1,0 +1,17 @@
+#socials-container {
+    display: flex;
+    align-items: center;
+}
+
+#socials-container mat-icon {
+    margin-left: 10px;
+    color: #fff;
+    font-size: 24px;
+    transition: font-size 0.2s;
+}
+
+#socials-container a:hover mat-icon {
+    font-size: 30px;
+    color: #364fab;
+    cursor: pointer;
+}

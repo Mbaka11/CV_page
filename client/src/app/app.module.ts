@@ -11,6 +11,9 @@ import { AppComponent } from '@app/pages/app/app.component';
 import { MainPageComponent } from '@app/pages/main-page/main-page.component';
 import { MaterialPageComponent } from '@app/pages/material-page/material-page.component';
 import { HeadbarComponent } from './components/headbar/headbar.component';
+import { StartApgeComponent } from './pages/start-apge/start-apge.component';
+import { LogoComponent } from './components/logo/logo.component';
+import { AboutComponent } from './components/about/about.component';
 
 /**
  * Main module that is used in main.ts.
@@ -19,7 +22,7 @@ import { HeadbarComponent } from './components/headbar/headbar.component';
  * Otherwise Angular Cli will not know in which module to put new component
  */
 @NgModule({
-    declarations: [AppComponent, MainPageComponent, MaterialPageComponent, PlayAreaComponent, SidebarComponent, HeadbarComponent],
+    declarations: [AppComponent, MainPageComponent, MaterialPageComponent, PlayAreaComponent, SidebarComponent, HeadbarComponent, StartApgeComponent, LogoComponent, AboutComponent],
     imports: [AppMaterialModule, AppRoutingModule, BrowserAnimationsModule, BrowserModule, FormsModule, HttpClientModule],
     providers: [],
     bootstrap: [AppComponent],
